@@ -1,5 +1,5 @@
- console.log('Olá, mundo!')
+var n1 = 5
+var n2 = 'cinco'
 
-var usarName = 'Mota'
-
-document.getElementById('user-name').innerHTML = usarName
+var total = n1 + parseInt(n2)
+console.log(total)
