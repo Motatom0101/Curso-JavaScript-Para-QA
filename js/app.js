@@ -38,17 +38,21 @@ console.log(resultado)
 // POSSO sacar dinheiro em caixas eletrônicos
 // PARA poder comprar em lugar que não aceita o cartão de débito ou crédito
 
+//Função saque:
 var saldo = 1000
 
 function saque(valor){
     if (valor > saldo){
         console.log('Saldo insuficiente!')
+    } else if(valor >= 700){
+        console.log('Valor do saque é superior ao máximo permitido por operação!')
+
     } else{
         saldo = saldo - valor
     }
 }
 
-saque(1001)
+saque(701)
 console.log(saldo)
 // CENÁRIO 1: Saque com sucesso
 // DADO que meu saldo é de 1000 reais
@@ -65,6 +69,6 @@ console.log(saldo)
 // DADO que meu saldo é de 1000 reais
 // E o valor máximo por operação é de 700
 // QUANDO faço um saque no valor de 701 reais
-// ENTÃO não deve deduzir do eu saldo
+// ENTÃO não deve deduzir do meu saldo
 // E deve mostrar o seguinte alerta: "o valor do saque é superior ao permitido por operação"
 
