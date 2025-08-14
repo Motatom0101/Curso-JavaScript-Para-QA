@@ -38,6 +38,14 @@ console.log(resultado)
 // POSSO sacar dinheiro em caixas eletrônicos
 // PARA poder comprar em lugar que não aceita o cartão de débito ou crédito
 
+var saldo = 1000
+
+function saque(valor){
+    saldo = saldo - valor
+}
+
+saque(500)
+console.log(saldo)
 // CENÁRIO 1: Saque com sucesso
 // DADO que meu saldo é de 1000 reais
 // QUANDO faço um saque de 500 reais
