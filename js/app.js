@@ -41,10 +41,14 @@ console.log(resultado)
 var saldo = 1000
 
 function saque(valor){
-    saldo = saldo - valor
+    if (valor > saldo){
+        console.log('Saldo insuficiente!')
+    } else{
+        saldo = saldo - valor
+    }
 }
 
-saque(500)
+saque(1001)
 console.log(saldo)
 // CENÁRIO 1: Saque com sucesso
 // DADO que meu saldo é de 1000 reais
